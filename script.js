@@ -1,11 +1,11 @@
 // shape: position 0 is the largest disk, position n is the smallest disk
 // holds values 1, 2, or 3
-var diskPositions = [1];
-var numDisks = 1;
+var diskPositions = [];
+var numDisks = 0;
 //shape: each tower has an array of which disks it contains, from bottom to top
 // it will be enforced that each is in ascending order
 // and that this matches diskPositions
-var towerDisks = [[0], [], []];
+var towerDisks = [[], [], []];
 var colors = ["navy",
     "crimson",
     "darkgreen",
