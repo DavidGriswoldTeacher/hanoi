@@ -47,6 +47,9 @@ function drawTowers() {
     ctx.fillRect(395, 100, 10, 200);
     ctx.font = "20px Consolas";
     ctx.textAlign = "center";
+    ctx.fillText("Start",100,50);
+    ctx.fillText("Free parking",250,50);
+    ctx.fillText("Destination", 400,50);
     ctx.fillText("Tower 1", 100, 80);
     ctx.fillText("Tower 2",250, 80);
     ctx.fillText("Tower 3", 400, 80);
