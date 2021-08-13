@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmable Towers of Hanoi</title>
+</head>
+
+<style>
+    code,textarea {
+        font-family:Consolas,'Lucida Console',Inconsolata,monospace;
+    }
+</style>
+<body>
+   
+    <div id="towerArea" style="display:flex;margin:.5em 0;flex-wrap:wrap;">
+        <canvas id="towerCanvas" width="500" height="300" style="flex: 0 0 500px; box-sizing:border-box;width:500px; height: 300px; border: 1px solid black"></canvas>
+        <div style="flex: 1 1 500px;min-width:300px; height:300px;margin:0;box-sizing:border-box;padding-left:.5em; padding-right:.5em;">
+            <div style="display:flex; width:100%; height:100%; flex-direction:column">
+            <p>Write code in the box below to solve the puzzle. Use the function <code>moveDisk(startTower,endTower)</code> to move one disk. You can press Ctrl-Enter to run the code, or click the button.</code></p>
+            <textarea spellcheck="false" id="code" style="font-size:1.2em;background-color:#dddddd;width:100%;flex-grow:1"></textarea>
+            <div style="padding-top:.5em"><button id="runButton" style="width:8em;height:4em" >Run code</button>
+            <button id="resetButton" style="width:8em;height:4em;">Reset</button></div>
+          
+        </div></div>
+        
+    </div>
+    <div id="settings">
+        <label for="numDisks">Number of discs: </label>
+        <input type="number" id="numDisks" min="1", max="10" value="1">
+    </div>
+    <p>Can you write a function of the form <code>moveDisks(numberOfDisks, startTower, finalTower)</code> 
+        that will allow you to solve this entire puzzle with a single call of that function?</p>
+    <div id="errorArea" style="display:inline-block;color:darkred"></div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
